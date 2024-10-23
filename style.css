@@ -3,13 +3,13 @@
 \**************************************************/
 
 @font-face {
-    font-family: "BlueSakura";
-    src: url("Assets/Fonts/BlueSakura.ttf");
+	font-family: "BlueSakura";
+	src: url("Assets/Fonts/BlueSakura.ttf");
 }
 
 @font-face {
-    font-family: "KomikaBI";
-    src: url("Assets/Fonts/Komika_BoldItalic.ttf");
+	font-family: "KomikaBI";
+	src: url("Assets/Fonts/Komika_BoldItalic.ttf");
 }
 
 /**************************************************\
@@ -17,37 +17,37 @@
 \**************************************************/
 
 body {
-    background-image: url("Assets/Images/Circuit01.jpeg");
-    color: hsl(0, 0%, 90%);
-    display: flex;
-    font-family: Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
-    overflow: overlay;
-    scrollbar-gutter: auto;
-    -webkit-user-select: none;
-    user-select: none;
+	background-image: url("Assets/Images/Circuit01.jpeg");
+	color: hsl(0, 0%, 90%);
+	display: flex;
+	font-family: Helvetica, sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: overlay;
+	scrollbar-gutter: auto;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 html {
-    height: 100%;
+	height: 100%;
 }
 
 ::-webkit-scrollbar {
-    background: none;
+	background: none;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(44, 44, 44);
-    border-radius: 5px;
+	background: rgb(44, 44, 44);
+	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(18, 212, 18);
+	background: rgba(18, 212, 18);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: rgba(18, 212, 18, 0.5);
+	background: rgba(18, 212, 18, 0.5);
 }
 
 /**************************************************\
@@ -55,95 +55,109 @@ html {
 \**************************************************/
 
 header {
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(22, 22, 22, 0.7);
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100%;
-    min-width: min-content;
-    text-wrap: nowrap;
-    width: 20%;
-    overflow-y: auto;
-    overflow-x: hidden;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(22, 22, 22, 0.7);
+	margin: 0;
+	min-height: 100%;
+	min-width: min-content;
+	text-wrap: nowrap;
+	width: 20%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/* to show popout header at small screen size */
+.showHeader {
+	animation: moveHeaderIn 0.5s ease-in-out;
+}
+
+.hideHeader {
+	animation: moveHeaderOut 0.5s ease-in-out;
 }
 
 header h1 {
-    color: rgb(18, 212, 18);
-    font-family: "BlueSakura";
-    font-size: 7rem;
-    font-weight: 300;
-    line-height: 30%;
-    margin: 3rem 0 5px 0;
-    padding: 0px 20px 0px 20px;
-    text-shadow: 3px 3px 1px white;
+	color: rgb(18, 212, 18);
+	font-family: "BlueSakura";
+	font-size: 7rem;
+	font-weight: 300;
+	line-height: 30%;
+	margin: 3rem 0 5px 0;
+	padding: 0px 20px 0px 20px;
+	text-shadow: 3px 3px 1px white;
 }
 
 header h2 {
-    font-family: "KomikaBI";
-    font-weight: 300;
-    text-shadow: 2px 2px 1px rgba(18, 212, 18, 0.75);
+	font-family: "KomikaBI";
+	font-weight: 300;
+	text-shadow: 2px 2px 1px rgba(18, 212, 18, 0.75);
 }
 
 .highlight {
-    color: rgb(18, 212, 18);
-    text-shadow: none;
+	color: rgb(18, 212, 18);
+	text-shadow: none;
 }
 
 #headerImage {
-    filter: drop-shadow(-1px -1px 6px rgba(0, 0, 0, 0.9))
-        drop-shadow(1px -1px 6px rgba(0, 0, 0, 0.9)) drop-shadow(-1px 1px 6px rgba(0, 0, 0, 0.9))
-        drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.9));
-    padding: 2rem 0 0.5rem 0;
-    margin-bottom: 1rem;
+	filter: drop-shadow(-1px -1px 6px rgba(0, 0, 0, 0.9))
+		drop-shadow(1px -1px 6px rgba(0, 0, 0, 0.9)) drop-shadow(-1px 1px 6px rgba(0, 0, 0, 0.9))
+		drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.9));
+	padding: 2rem 0 0.5rem 0;
+	margin-bottom: 1rem;
 }
 
 #headerImage:hover {
-    animation: shakeGrow 0.8s ease-out;
+	animation: shakeGrow 0.8s ease-out;
 }
 
 #logo {
-    text-align: center;
+	text-align: center;
 }
 
 #pageNavigation {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
 }
 
 #pageNavigation a {
-    color: white;
-    font-family: "BlueSakura";
-    font-size: 3.5rem;
-    line-height: 70%;
-    padding: 1rem 2.5rem 1rem 5rem;
-    text-decoration: none;
-    text-shadow: 2px 2px 1px rgba(18, 212, 18, 0.75);
+	color: white;
+	font-family: "BlueSakura";
+	font-size: 3.5rem;
+	line-height: 70%;
+	padding: 1rem 2.5rem 1rem 5rem;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px rgba(18, 212, 18, 0.75);
 }
 
 #pageNavigation a:hover {
-    animation: shake 0.5s ease;
-    color: rgb(0, 0, 0);
-    text-shadow: -3px -3px 4px rgb(18, 212, 18), -3px 3px 4px rgb(18, 212, 18),
-        3px -3px 4px rgb(18, 212, 18), 3px 3px 4px rgb(18, 212, 18);
+	animation: shake 0.5s ease;
+	color: rgb(0, 0, 0);
+	text-shadow: -3px -3px 4px rgb(18, 212, 18), -3px 3px 4px rgb(18, 212, 18),
+		3px -3px 4px rgb(18, 212, 18), 3px 3px 4px rgb(18, 212, 18);
 }
 
 #pageNavigation a:active {
-    color: rgb(138, 138, 138);
-    text-shadow: 2px 2px 1px rgba(0, 0, 0);
+	color: rgb(138, 138, 138);
+	text-shadow: 2px 2px 1px rgba(0, 0, 0);
 }
 
 #socialLinks img {
-    padding: 10px 20px 0 20px;
-    filter: drop-shadow(4px 4px 2px black);
+	padding: 10px 20px 0 20px;
+	filter: drop-shadow(4px 4px 2px black);
 }
 
 #socialLinks img:hover {
-    filter: drop-shadow(0px 0px 3px rgb(18, 212, 18));
-    animation: shake 0.5s ease;
+	filter: drop-shadow(0px 0px 3px rgb(18, 212, 18));
+	animation: shake 0.5s ease;
+}
+
+#menuButton {
+	display: none;
+	z-index: 1;
 }
 
 /**************************************************\
@@ -151,178 +165,257 @@ header h2 {
 \**************************************************/
 
 li .checked:first-of-type {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 main {
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    width: 80%;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	width: 80%;
 }
 
 main h3 {
-    color: rgb(18, 212, 18);
-    font-family: "KomikaBI";
-    margin-bottom: 5px;
+	color: rgb(18, 212, 18);
+	font-family: "KomikaBI";
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 1px rgb(190, 190, 190);
+	letter-spacing: 2px;
 }
 
 main h4 {
-    color: rgb(180, 180, 180);
-    font-size: 0.95rem;
-    margin: 0 0 15px 0;
-    text-align: left;
+	color: rgb(180, 180, 180);
+	font-size: 0.95rem;
+	margin: 0 0 15px 0;
+	text-align: left;
 }
 
 main ul {
-    align-self: center;
-    font-family: "KomikaBI";
-    letter-spacing: 0.03rem;
-    text-wrap: nowrap;
-    width: 50%;
+	font-family: "KomikaBI";
+	letter-spacing: 0.03rem;
+	text-wrap: wrap;
+	width: 80%;
 }
 
 main li {
-    list-style-image: url("Assets/Images/customBullet01.png");
-    padding: 5px 0 5px 0;
-}
-
-.checked {
-    color: rgb(255, 123, 0);
+	list-style-image: url("Assets/Images/customBullet01.png");
+	padding: 5px 0 5px 0;
+	width: 100%;
 }
 
 main li::marker {
-    color: rgb(18, 212, 18);
+	color: rgb(18, 212, 18);
+}
+
+.checked {
+	color: rgb(255, 123, 0);
 }
 
 .contentSection {
-    align-items: center;
-    min-height: 500px;
-    border-bottom: 2px solid rgba(22, 22, 22, 0.7);
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 500px;
+	border-bottom: 2px solid rgba(22, 22, 22, 0.7);
+	padding-bottom: 50px;
 }
 
 .contentSection:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .contentSection h2 {
-    color: rgb(18, 212, 18);
-    font-family: "BlueSakura";
-    font-size: 4.5rem;
-    font-weight: 300;
-    letter-spacing: 0.12rem;
-    line-height: 1rem;
-    padding-top: 2rem;
-    margin-bottom: 0;
-    text-align: center;
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+	color: rgb(18, 212, 18);
+	font-family: "BlueSakura";
+	font-size: 4.5rem;
+	font-weight: 300;
+	letter-spacing: 0.12rem;
+	line-height: 1rem;
+	padding-top: 2rem;
+	margin-bottom: 0;
+	text-align: center;
+	text-shadow: 2px 2px 1px rgb(255, 255, 255);
 }
 
 .contentSection p {
-    align-self: center;
-    font-family: "KomikaBI";
-    font-size: 1.25em;
-    letter-spacing: 0.025rem;
-    line-height: 2rem;
-    min-width: 100%;
-    padding: 0 1rem 0 1rem;
+	align-self: center;
+	font-family: "KomikaBI";
+	font-size: 1.25em;
+	letter-spacing: 0.025rem;
+	line-height: 2rem;
+	min-width: 100%;
+	padding: 0 1rem 0 1rem;
 }
 
 .columnContainer {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 0 10% 0 10%;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 10% 0 10%;
 }
 
 .leftColumn {
-    width: 60%;
-    margin-right: 0rem;
+	width: 60%;
+	margin-right: 0rem;
 }
 
 .rightColumn {
-    width: 25%;
-    padding: 0;
-    margin: 0;
+	width: 25%;
+	padding: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .rightColumn img {
-    transform: scale(0.75) rotate(-15deg);
-    max-width: 100%;
+	transform: scale(0.75) rotate(-15deg);
+	max-width: 400px;
+	margin-right: 0;
 }
 
 .skillsContainer {
-    align-self: center;
-    background-color: rgba(44, 44, 44, 0.7);
-    border: 3px solid rgb(58, 58, 58);
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    width: 75%;
+	align-self: center;
+	background-color: rgba(44, 44, 44, 0.7);
+	border: 3px solid rgb(58, 58, 58);
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+	padding-bottom: 2rem;
+	width: 75%;
 }
 
 .skillsList {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
 }
 
 .skillsList h3 {
-    font-size: 1.7rem;
-    padding-top: 0;
-    letter-spacing: 0.15rem;
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+	font-size: 1.7rem;
+	padding-top: 0;
+	letter-spacing: 0.15rem;
+	text-shadow: 2px 2px 1px rgb(255, 255, 255);
 }
 
 .whiteHighlight {
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 #about {
-    display: flex;
-    flex-wrap: no;
-}
-
-.bodyImage {
-    width: 200px;
+	display: flex;
+	flex-wrap: no;
 }
 
 #copyright {
-    color: rgb(124, 124, 124);
-    font-family: "KomikaBI";
-    font-size: medium;
-    font-weight: bold;
+	color: rgb(124, 124, 124);
+	font-family: "KomikaBI";
+	font-size: medium;
+	font-weight: bold;
 }
 
 #bodyAvatar {
-    width: 100%;
+	width: 100%;
 }
 
 .skillItem {
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.13);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem 0 2rem;
-    margin-top: 5px;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.13);
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem 0 2rem;
+	margin-top: 5px;
 }
 
-.skillItem:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: black;
-}
+/*.skillItem:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: black;
+}*/
 
 .skillName {
-    font-family: "KomikaBI";
-    font-size: 1.25rem;
-    padding: 0.25rem 0 0.25rem 0;
+	font-family: "KomikaBI";
+	font-size: 1.25rem;
+	padding: 0.25rem 0 0.25rem 0;
+}
+
+/**************************************************\
+******************* MEDIA QUERIES ******************
+\**************************************************/
+
+@media (width < 1850px) {
+	.skillsContainer {
+		flex-direction: column;
+		align-items: center;
+		min-width: 500px;
+	}
+	.skillsList {
+		min-width: 420px;
+		width: 60%;
+	}
+	.skillItem {
+		font-size: 0.75rem;
+	}
+	.contentSection h2 {
+		line-height: 50px;
+	}
+	.columnContainer {
+		flex-direction: column;
+	}
+	.leftColumn,
+	.rightColumn {
+		width: 90%;
+	}
+}
+@media (width < 1000px) {
+	main {
+		width: 100%;
+	}
+	header {
+		position: absolute;
+		align-items: center;
+		justify-content: space-evenly;
+		display: none;
+		flex-direction: column;
+		background-color: rgba(22, 22, 22, 0.95);
+		min-height: 100vh;
+		min-width: 100vw;
+		width: 20%;
+		z-index: 1;
+	}
+	footer {
+		display: none;
+	}
+	#headerImage {
+		display: none;
+	}
+	#pageNavigation {
+		align-items: center;
+	}
+	#pageNavigation a {
+		padding: 20px 0 20px 0;
+	}
+	.contentSection p {
+		font-size: 1rem;
+	}
+	#menuButton {
+		color: white;
+		font-size: 5rem;
+		display: inline-block;
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		width: 75px;
+		height: 75px;
+		border: 2px solid white;
+		border-radius: 10px;
+		text-align: center;
+		vertical-align: center;
+	}
+	#menuButton:hover {
+		color: gray;
+		border-color: gray;
+	}
 }
 
 /**************************************************\
@@ -330,55 +423,73 @@ main li::marker {
 \**************************************************/
 
 @keyframes shake {
-    15% {
-        -webkit-transform: translateX(-5px) rotate(-2.5deg);
-        transform: translateX(-5px) rotate(-2.5deg);
-    }
+	15% {
+		-webkit-transform: translateX(-5px) rotate(-2.5deg);
+		transform: translateX(-5px) rotate(-2.5deg);
+	}
 
-    30% {
-        -webkit-transform: translateX(calc(5px / 2)) rotate(2.5deg);
-        transform: translateX(calc(5px / 2)) rotate(2.5deg);
-    }
+	30% {
+		-webkit-transform: translateX(calc(5px / 2)) rotate(2.5deg);
+		transform: translateX(calc(5px / 2)) rotate(2.5deg);
+	}
 
-    45% {
-        -webkit-transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8));
-        transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8));
-    }
+	45% {
+		-webkit-transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8));
+		transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8));
+	}
 
-    60% {
-        -webkit-transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3));
-        transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3));
-    }
+	60% {
+		-webkit-transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3));
+		transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3));
+	}
 
-    75% {
-        -webkit-transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 5));
-        transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 5));
-    }
+	75% {
+		-webkit-transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 5));
+		transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 5));
+	}
 }
 
 @keyframes shakeGrow {
-    15% {
-        -webkit-transform: translateX(-5px) rotate(-2.5deg) scale(1.1);
-        transform: translateX(-5px) rotate(-2.5deg) scale(1.1);
-    }
+	15% {
+		-webkit-transform: translateX(-5px) rotate(-2.5deg) scale(1.1);
+		transform: translateX(-5px) rotate(-2.5deg) scale(1.1);
+	}
 
-    30% {
-        -webkit-transform: translateX(calc(5px / 2)) rotate(2.5deg) scale(1.1);
-        transform: translateX(calc(5px / 2)) rotate(2.5deg) scale(1.1);
-    }
+	30% {
+		-webkit-transform: translateX(calc(5px / 2)) rotate(2.5deg) scale(1.1);
+		transform: translateX(calc(5px / 2)) rotate(2.5deg) scale(1.1);
+	}
 
-    45% {
-        -webkit-transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8)) scale(1.1);
-        transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8)) scale(1.1);
-    }
+	45% {
+		-webkit-transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8)) scale(1.1);
+		transform: translateX(calc(-5px / 2)) rotate(calc(-2.5deg / 1.8)) scale(1.1);
+	}
 
-    60% {
-        -webkit-transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3)) scale(1.1);
-        transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3)) scale(1.1);
-    }
+	60% {
+		-webkit-transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3)) scale(1.1);
+		transform: translateX(calc(5px / 3.3)) rotate(calc(2.5deg / 3)) scale(1.1);
+	}
 
-    75% {
-        -webkit-transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 3) scale(1.1));
-        transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 3)) scale(1.1);
-    }
+	75% {
+		-webkit-transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 3) scale(1.1));
+		transform: translateX(calc(-5px / 5.5)) rotate(calc(-2.5deg / 3)) scale(1.1);
+	}
+}
+
+@keyframes moveHeaderIn {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes moveHeaderOut {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
 }
