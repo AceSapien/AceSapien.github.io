@@ -351,10 +351,13 @@ main li::marker {
 	}
 	.skillsList {
 		min-width: 420px;
-		width: 60%;
 	}
 	.skillItem {
 		font-size: 0.75rem;
+	}
+	.skillName {
+		font-size: 1.25rem;
+		padding: 0.25rem 0 0.25rem 0;
 	}
 	.contentSection h2 {
 		line-height: 50px;
@@ -415,6 +418,19 @@ main li::marker {
 	#menuButton:hover {
 		color: gray;
 		border-color: gray;
+	}
+	.skillsContainer {
+		min-width: 340px;
+	}
+	.skillsList {
+		min-width: 90%;
+	}
+	.skillItem {
+		font-size: 0.5rem;
+	}
+	.skillName {
+		font-size: 1rem;
+		padding: 0.25rem 0 0.25rem 0;
 	}
 }
 
