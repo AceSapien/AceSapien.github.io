@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Product Landing Page</title>
+	</head>
+	<body>
+		<header id="header">
+			<img
+				src="https://www.accessibility.org.au/wp-content/uploads/2024/08/dooms-1361x765-1.jpg"
+				width=" 50%"
+				id="header-img"
+				alt="site logo"
+			/>
+			<div id="header-spacer"></div>
+			<nav id="nav-bar">
+				<a href="#product-info" class="nav-link">Game Info</a>
+				<a href="#new-features" class="nav-link">Features</a>
+				<a href="#trailer" class="nav-link">Trailer</a>
+				<a href="#signup-form" class="nav-link">Mailing List</a>
+			</nav>
+		</header>
+		<div class="section-container">
+			<section id="product-info" class="section">
+				<img
+					src="https://images.mweb.bethesda.net/_images/Doom-DoomII_Bundle_Boxart_900x506-01.jpg?f=jpg&h=506&w=900&s=vnPMR22kI6zvn6Dp2BYpmo6AoSn9WtKtqW2JqWHtdCg"
+					id="body-img"
+					alt="doom + doom 2 cover art"
+				/>
+				<p>
+					Developed by <strong>id Software</strong>, and originally released in 1993,
+					<strong>DOOM</strong> pioneered and popularized the first-person shooter,
+					setting a standard for all FPS games. The critically acclaimed sequel,
+					<strong>DOOM II</strong>, followed in 1994. Now the definitive, newly enhanced
+					versions of <strong>DOOM + DOOM II</strong> are available as a combined product!
+				</p>
+			</section>
+			<section id="new-features" class="section">
+				<h3>New Enhancements</h3>
+				<ul>
+					<li>Online, cross-platform deathmatch and co-op for up to 16 players</li>
+					<li>Community-published mod support with an in-game mod browser</li>
+					<li>
+						Choose between the original midi DOOM and DOOM II soundtracks or the modern
+						IDKFA versions by Andrew Hulshult (including brand-new DOOM II recordings)
+					</li>
+					<li>
+						Improved performance with multithreaded rendering supporting up to 4K
+						resolution
+					</li>
+					<li>Now on the KEX engine</li>
+					<li>
+						BOOM source compatibility makes it possible for hundreds of
+						community-created mods from the past 25 years to be published in-game
+					</li>
+					<li>
+						Accessibility options, such as a modern font to improve legibility, high
+						contrast mode, text-to-speech, speech-to-text multiplayer chat and more
+					</li>
+					<li>
+						Translated into 8 new languages: Mexican Spanish, Brazilian Portuguese,
+						Polish, Russian, Japanese, Korean, Traditional Chinese and Simplified
+						Chinese
+					</li>
+				</ul>
+				<h3>Existing Enhancements</h3>
+				<ul>
+					<li>Upgraded visuals</li>
+					<li>Modern controller support</li>
+					<li>Weapon carousel for faster weapon switching</li>
+					<li>Improved mouse and keyboard controls</li>
+					<li>Local split-screen deathmatch and co-op for up to 4 players</li>
+					<li>
+						Featured community mods, including REKKR, Revolution!, Syringe, Double
+						Impact, Arrival, and more! Expect an ever-expanding list of single player
+						mods to be added by the community modders.
+					</li>
+					<li>60 FPS and native 16:9 support - up to 1080p</li>
+					<li>Restored original in-game music using original hardware</li>
+					<li>Quick Save/Load support</li>
+					<li>DeHacked mod support</li>
+				</ul>
+				<div class="img-container">
+					<img
+						src="https://cdn.arstechnica.net/wp-content/uploads/2024/08/doom_redo1.jpg"
+						width="400px"
+						class="screenshot"
+						alt="in game screenshot 1"
+					/>
+					<img
+						src="https://images.launchbox-app.com/9e36b230-2408-4307-8b68-363109c9f34b.jpg"
+						width="400px"
+						class="screenshot"
+						alt="in game screenshot 1"
+					/>
+				</div>
+			</section>
+			<section id="trailer" class="section">
+				<h2>Official Trailer</h2>
+				<p>
+					The definitive combined release of the legendary action FPS
+					<strong>DOOM + DOOM II</strong> is now available!
+				</p>
+				<h4>Check out the Official Trailer below!</h4>
+				<iframe
+					width="560"
+					id="video"
+					height="315"
+					src="https://www.youtube.com/embed/-4-xswoPRpo?si=e0eY3NGjmaQvu1yg"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></iframe>
+			</section>
+			<section id="signup-form" class="section">
+				<h2>Sign up to our mailing list</h2>
+				<p>
+					Sign up below to recieve the latest DOOM news and updates straight to your
+					inbox.
+				</p>
+				<form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+					<label for="name"
+						>Your name:
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="e.g. John Romero"
+							required
+					/></label>
+					<label for="email"
+						>Email:
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="e.g. john@romero.com"
+							required
+					/></label>
+					<input type="submit" id="submit" />
+				</form>
+			</section>
+			<footer>
+				<p>Copyright &copy 2024 Adam Glachan. No rights reserved.</p>
+			</footer>
+		</div>
+	</body>
+</html>
