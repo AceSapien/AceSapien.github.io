@@ -16,6 +16,10 @@
 ********************* GLOBAL ***********************
 \**************************************************/
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-image: url("Assets/Images/Circuit01.jpeg");
 	color: hsl(0, 0%, 90%);
@@ -56,6 +60,7 @@ html {
 
 header {
 	align-items: center;
+	box-sizing: content-box;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: column;
@@ -106,6 +111,7 @@ header h2 {
 		drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.9));
 	padding: 2rem 0 0.5rem 0;
 	margin-bottom: 1rem;
+	max-width: 40%;
 }
 
 #headerImage:hover {
@@ -145,9 +151,14 @@ header h2 {
 	text-shadow: 2px 2px 1px rgba(0, 0, 0);
 }
 
+#socialLinks {
+	box-sizing: content-box;
+}
+
 #socialLinks img {
-	padding: 10px 20px 0 20px;
+	padding: 10px 20px 20px 20px;
 	filter: drop-shadow(4px 4px 2px black);
+	width: 20%;
 }
 
 #socialLinks img:hover {
@@ -342,7 +353,7 @@ main li::marker {
 .projectsContainer {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	width: 90%;
 	align-items: flex-end;
 	justify-content: space-evenly;
 	padding-top: 75px;
@@ -355,7 +366,7 @@ main li::marker {
 	flex-direction: column;
 	width: 25%;
 	border-radius: 8%;
-	border: 3px solid rgba(255, 255, 255, 0.2);
+	border: 6px solid rgba(255, 255, 255, 0.2);
 }
 
 .projectThumbnail img {
@@ -364,7 +375,7 @@ main li::marker {
 }
 
 .projectThumbnail:hover {
-	filter: brightness(130%) drop-shadow(0px 0px 3px rgb(18, 212, 18));
+	filter: brightness(130%) drop-shadow(0px 0px 6px rgb(18, 212, 18));
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transition: 0.15s ease-in-out;
@@ -381,7 +392,12 @@ main li::marker {
 
 .projectThumbnail h3 {
 	text-align: center;
-	padding: 0 0 20px 0;
+	padding: 0;
+}
+
+.projectThumbnail p {
+	margin: 0 0 15px 0;
+	color: rgb(139, 139, 139);
 }
 
 /**************************************************\
