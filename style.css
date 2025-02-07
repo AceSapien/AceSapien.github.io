@@ -250,6 +250,7 @@ main li::marker {
 
 .contentSection p {
 	align-self: center;
+	color: rgb(240, 240, 240);
 	font-family: "KomikaBI";
 	font-size: 1.25em;
 	letter-spacing: 0.025rem;
