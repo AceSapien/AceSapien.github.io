@@ -100,6 +100,22 @@ header h2 {
 	text-shadow: 2px 2px 1px rgba(18, 212, 18, 0.75);
 }
 
+a {
+	color: rgb(255, 255, 255);
+	font-size: 4rem;
+	font-family: "BlueSakura";
+	padding-top: 0px;
+	text-shadow: -3px -3px 4px rgb(60, 60, 60), -3px 3px 4px rgb(60, 60, 60),
+		3px -3px 4px rgb(60, 60, 60), 3px 3px 4px rgb(60, 60, 60);
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-shadow: -3px -3px 4px rgb(18, 212, 18), -3px 3px 4px rgb(18, 212, 18),
+		3px -3px 4px rgb(18, 212, 18), 3px 3px 4px rgb(18, 212, 18);
+}
+
 .highlight {
 	color: rgb(18, 212, 18);
 	text-shadow: none;
@@ -346,7 +362,7 @@ main li::marker {
 	padding: 0.25rem 0 0.25rem 0;
 }
 
-#projects {
+#portfolio {
 	padding-bottom: 100px;
 	text-align: center;
 }
@@ -383,7 +399,7 @@ main li::marker {
 	-webkit-transition: 0.15s ease-in-out;
 }
 
-#projects > h3.category {
+#portfolio > h3.category {
 	font-size: 1.8rem;
 	padding-top: 20px;
 	padding-bottom: 0;
